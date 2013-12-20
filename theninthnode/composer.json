@@ -1,0 +1,18 @@
+{
+    "name": "theninthnode/defaqto",
+    "type": "library",
+    "description": "PHP package for interacting with the Defaqto.io API.",
+    "authors": [
+        {
+            "name": "Billy Jones",
+            "email": "billyjones26@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {"TheNinthNode\\Defaqto": "src/"},
+    }
+}
