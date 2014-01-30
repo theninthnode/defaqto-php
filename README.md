@@ -1,7 +1,7 @@
 DefaqtoIO PHP Client
 ====================
 
-DefaqtoIO PHP is a PHP package for using the [DefaqtoIO](defaqto.io) CMS service.
+DefaqtoIO PHP Client is a PHP package for using the [DefaqtoIO](http://defaqto.io) CMS service.
 
 ##Installation
 
@@ -35,7 +35,7 @@ This package comes with a Service Provider and Facade for easy integration with 
 ##Usage
 
 
-1. Register your account at [defaqto.io](defaqto.io). 
+1. Register your account at [defaqto.io](http://defaqto.io). 
 2. Log in and create your first app by clicking the "+ Create New App" button.
 3. In your new app click "Settings" from the left menu.
 4. Take note of the the App ID and Access Token.
