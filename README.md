@@ -1,12 +1,12 @@
 DefaqtoIO PHP Client
-####################
+====================
 
 DefaqtoIO PHP is a PHP package for using the [DefaqtoIO](defaqto.io) CMS service.
 
-Installation
-------------
+##Installation
 
-## Composer
+
+### Composer
 
 Add the library to your composer.json file
 
@@ -14,13 +14,13 @@ Add the library to your composer.json file
 
 Run ```composer install``` to get the latest version of the package.
 
-## Manually
+### Manually
 
 It's recommended that you use Composer, however you can download and install from this repository.
 
 Please note. This client requires the Guzzle REST PHP package.
 
-## Laravel 4
+### Laravel 4
 
 This package comes with a Service Provider and Facade for easy integration with Laravel4.
 
@@ -32,8 +32,8 @@ This package comes with a Service Provider and Facade for easy integration with 
 
     'Defaqto' => 'TheNinthNode\Defaqto\Facades\Defaqto',
 
-Usage
------
+##Usage
+
 
 1. Register your account at [defaqto.io](defaqto.io). 
 2. Log in and create your first app by clicking the "+ Create New App" button.
@@ -61,7 +61,7 @@ You can use the class with the following syntax:
 
 Where ```entity``` is one of ```pages```, ```blocks```, ```variables```, ```blog/posts```, ```blog/categories```, ```blog/tags```, ```blog/authors```.
 
-The second (optional) param is an array of key=>value pairs known as attributes. ie. array('page_slug'=>'about-us')
+The second (optional) param is an array of key=>value pairs known as attributes. ie. ```array('page_slug'=>'about-us')```
 
 Each entity has the following optional params:
 
@@ -72,13 +72,11 @@ Each entity has the following optional params:
 
 There is a third optional param for use with the blog/posts entity. This is an array of entities to exclude (tags, categories, authors)
 
-## Examples
+##Examples
 
 ### Pages
 
-Entity:
-
-```pages```
+Entity: ```pages```
 
 Params:
 
@@ -97,9 +95,7 @@ To get a page by ```page_slug```
 
 ### HTML Blocks
 
-Entity:
-
-```pages```
+Entity: ```blocks```
 
 Params:
 
@@ -117,9 +113,7 @@ To get a block by ```block_id```
 
 ### Variables
 
-Entity:
-
-```variables```
+Entity: ```variables```
 
 Params:
 
@@ -138,9 +132,7 @@ To get a variable by it's ```key```
 
 ### Blog posts
 
-Entity:
-
-```blog/posts```
+Entity: ```blog/posts```
 
 Params:
 
@@ -171,9 +163,7 @@ To get all posts without their authors, tags, or categories
 
 ### Blog categories
 
-Entity:
-
-```blog/categories```
+Entity: ```blog/categories```
 
 Params:
 
@@ -192,9 +182,7 @@ To get a category by it's slug
 
 ### Blog tags
 
-Entity:
-
-```blog/tags```
+Entity: ```blog/tags```
 
 Params:
 
@@ -213,9 +201,7 @@ To get a tag by it's slug
 
 ### Blog authors
 
-Entity:
-
-```blog/authors```
+Entity: ```blog/authors```
 
 Params:
 
