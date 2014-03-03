@@ -57,26 +57,26 @@ OR
 
 You can use the class with the following syntax:
 
-    $html = Defaqto::setup($app_id, $access_token)->get('entity', array('key'=>'value'));
+    $html = Defaqto::setup($app_id, $access_token)->get('resource', array('key'=>'value'));
 
-Where ```entity``` is one of ```pages```, ```blocks```, ```variables```, ```blog/posts```, ```blog/categories```, ```blog/tags```, ```blog/authors```.
+Where ```resource``` is one of ```pages```, ```blocks```, ```variables```, ```blog/posts```, ```blog/categories```, ```blog/tags```, ```blog/authors```.
 
 The second (optional) param is an array of key=>value pairs known as attributes. ie. ```array('page_slug'=>'about-us')```
 
-Each entity has the following optional params:
+Each resource has the following optional params:
 
 * order - field to use for sorting
 * dir - direction to sort ASC or DESC
 * limit - limit the amount of results
 * offset - number of results to skip
 
-There is a third optional param for use with the blog/posts entity. This is an array of entities to exclude (tags, categories, authors)
+There is a third optional param for use with the blog/posts resource. This is an array of resources to exclude (tags, categories, authors)
 
 ##Examples
 
 ### Pages
 
-Entity: ```pages```
+resource: ```pages```
 
 Params:
 
@@ -95,7 +95,7 @@ To get a page by ```page_slug```
 
 ### HTML Blocks
 
-Entity: ```blocks```
+resource: ```blocks```
 
 Params:
 
@@ -113,7 +113,7 @@ To get a block by ```block_id```
 
 ### Variables
 
-Entity: ```variables```
+resource: ```variables```
 
 Params:
 
@@ -132,7 +132,7 @@ To get a variable by it's ```key```
 
 ### Blog posts
 
-Entity: ```blog/posts```
+resource: ```blog/posts```
 
 Params:
 
@@ -163,7 +163,7 @@ To get all posts without their authors, tags, or categories
 
 ### Blog categories
 
-Entity: ```blog/categories```
+resource: ```blog/categories```
 
 Params:
 
@@ -182,7 +182,7 @@ To get a category by it's slug
 
 ### Blog tags
 
-Entity: ```blog/tags```
+resource: ```blog/tags```
 
 Params:
 
@@ -201,7 +201,7 @@ To get a tag by it's slug
 
 ### Blog authors
 
-Entity: ```blog/authors```
+resource: ```blog/authors```
 
 Params:
 
