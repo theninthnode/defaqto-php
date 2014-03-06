@@ -10,7 +10,7 @@ DefaqtoIO PHP Client is a PHP package for using the [DefaqtoIO](http://defaqto.i
 
 Add the library to your composer.json file
 
-    "theninthnode/defaqto-php": "1.0.*"
+    "theninthnode/defaqto": "dev-master"
 
 Run ```composer install``` to get the latest version of the package.
 
